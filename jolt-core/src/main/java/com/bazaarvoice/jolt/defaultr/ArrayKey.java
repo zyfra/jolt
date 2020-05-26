@@ -45,8 +45,6 @@ public class ArrayKey extends Key {
                 keyInts = Arrays.asList( keyInt );
                 break;
             case STAR:
-                keyInts = Collections.emptyList();
-                break;
             case LAST:
                 keyInts = Collections.emptyList();
                 break;

@@ -102,10 +102,9 @@ public abstract class Key {
                 keyStrings = Arrays.asList( rawKey );
                 break;
             case STAR:
-                keyStrings = Collections.emptyList();
-                break;
             case LAST:
                 keyStrings = Collections.emptyList();
+                break;
             default :
                 throw new IllegalStateException( "Someone has added an op type without changing this method." );
         }
