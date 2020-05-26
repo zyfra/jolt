@@ -175,6 +175,7 @@ public class Defaultr implements SpecDriven, Transform {
         public static final String STAR = "*";
         public static final String OR = "|";
         public static final String ARRAY = "[]";
+        public static final String LAST = "!";
     }
 
     private final Key mapRoot;

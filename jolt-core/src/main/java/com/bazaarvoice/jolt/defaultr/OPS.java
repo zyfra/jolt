@@ -19,10 +19,12 @@ import com.bazaarvoice.jolt.Defaultr;
 import com.bazaarvoice.jolt.exception.SpecException;
 
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 
 public enum OPS {
 
-    STAR, OR, LITERAL;
+    STAR, OR, LITERAL, LAST;
 
     public static OPS parse( String key ) {
         if ( key.contains( Defaultr.WildCards.STAR ) ){
@@ -36,6 +38,14 @@ public enum OPS {
         if ( key.contains( Defaultr.WildCards.OR ) ) {
             return OR;
         }
+        if ( key.contains( Defaultr.WildCards.LAST ) ){
+
+            if ( ! Defaultr.WildCards.LAST.equals( key ) ) {
+                throw new SpecException("Defaultr key " + key + " is invalid.  * keys can only contain !, and no other characters." );
+            }
+
+            return LAST;
+        }
         return LITERAL;
     }
 
@@ -47,32 +57,21 @@ public enum OPS {
         @Override
         public int compare(OPS ops, OPS ops1) {
 
+            Map<OPS,Integer> opsMap = new HashMap<OPS, Integer>();
+
+            opsMap.put(LITERAL, 1);
+            opsMap.put(OR, 2);
+            opsMap.put(LAST, 3);
+            opsMap.put(STAR, 4);
+
             // a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
             // s < s1 -> -1
             // s = s1 -> 0
             // s > s1 -> 1
 
-            if ( ops == ops1 ) {
-                return 0;
-            }
+            if (opsMap.get(ops).equals(null) || opsMap.get(ops1).equals(null)) throw new IllegalStateException( "Someone has added an op type without changing this method." );
 
-            if ( STAR == ops ) {
-                return 1;
-            }
-            if ( LITERAL == ops ) {
-                return -1;
-            }
-
-            // if we get here, "ops" has to equal OR
-            if ( STAR == ops1) {
-                return -1;
-            }
-            if ( LITERAL == ops1 ) {
-                return 1;
-            }
-
-            // both are ORs, should never get here
-            throw new IllegalStateException( "Someone has added an op type without changing this method." );
+            return opsMap.get(ops).compareTo(opsMap.get(ops1));
         }
     }
 }

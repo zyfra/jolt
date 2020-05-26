@@ -47,6 +47,9 @@ public class ArrayKey extends Key {
             case STAR:
                 keyInts = Collections.emptyList();
                 break;
+            case LAST:
+                keyInts = Collections.emptyList();
+                break;
             default :
                 throw new IllegalStateException( "Someone has added an op type without changing this method." );
         }
@@ -119,6 +122,10 @@ public class ArrayKey extends Key {
                     }
                 }
                 return indexesInRange;
+            case LAST:
+                List<Integer> lastIndexArray = new ArrayList<>();
+                lastIndexArray.add(container.size() - 1);
+                return lastIndexArray;
             default :
                 throw new IllegalStateException( "Someone has added an op type without changing this method." );
         }
