@@ -1,0 +1,110 @@
+{
+  "registry": "bitummap.azurecr.io",
+  "imageName": "versioneer",
+  "tags": [
+    {
+      "name": "1.0",
+      "digest": "sha256:3736e7657f5e1665033ce612790d4ceec46ac253c40af74d6fba37dcc049a6c2",
+      "createdTime": "2020-05-06T07:03:23.9563454Z",
+      "lastUpdateTime": "2020-05-06T07:03:23.9563454Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.0.0",
+      "digest": "sha256:3736e7657f5e1665033ce612790d4ceec46ac253c40af74d6fba37dcc049a6c2",
+      "createdTime": "2020-05-06T11:11:24.1953114Z",
+      "lastUpdateTime": "2020-05-06T11:11:24.1953114Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.0.1-SNAPSHOT",
+      "digest": "sha256:03f5cf486c2d7b5511724b096117527f046c31f5f7843105d20a72ef684b75e9",
+      "createdTime": "2020-05-06T07:04:11.8063528Z",
+      "lastUpdateTime": "2020-05-06T07:04:11.8063528Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.0.2-SNAPSHOT",
+      "digest": "sha256:2388402979591d476ed3a8cd317ee3619a8bb028b9e0cad83fda376a1a72320e",
+      "createdTime": "2020-05-06T07:04:41.8529788Z",
+      "lastUpdateTime": "2020-05-06T07:04:41.8529788Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.0.3-SNAPSHOT",
+      "digest": "sha256:a674b13c4853e97bedd6509ca22362cc9c669d168a05564d4808518e79d448e3",
+      "createdTime": "2020-05-06T07:04:56.4810028Z",
+      "lastUpdateTime": "2020-05-06T07:04:56.4810028Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.1.0",
+      "digest": "sha256:cd26a6b5eb80e1cf070b6a576edd33c8247d0170af7b9f93d169f78aa5766fff",
+      "createdTime": "2020-05-06T07:01:25.0365069Z",
+      "lastUpdateTime": "2020-05-06T07:01:25.0365069Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "1.1.1-SNAPSHOT",
+      "digest": "sha256:455f1b046785b6724a58a8a2fdd6879c237295b307e79269d49180653b6bf50d",
+      "createdTime": "2020-05-06T11:21:53.4268686Z",
+      "lastUpdateTime": "2020-05-06T11:21:53.4268686Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    },
+    {
+      "name": "kong",
+      "digest": "sha256:455f1b046785b6724a58a8a2fdd6879c237295b307e79269d49180653b6bf50d",
+      "createdTime": "2020-05-06T07:04:27.2489391Z",
+      "lastUpdateTime": "2020-05-06T07:04:27.2489391Z",
+      "signed": false,
+      "changeableAttributes": {
+        "deleteEnabled": true,
+        "writeEnabled": true,
+        "readEnabled": true,
+        "listEnabled": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "operation": "shift",
+    "spec": {
+      "tags": {
+        "*": {
+          "name": ["options.[&1].key",
+            "options.[&1].value"]
+        }
+      }
+    }
+  },
+  {
+    "operation": "sort",
+    "spec": {}
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "options[]": {
+        "*": {
+          "enabled": "true"
+        },
+        "!": {
+          "default": "true"
+        }
+      }
+    }
+  }
+]
