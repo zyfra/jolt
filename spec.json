@@ -18,7 +18,7 @@
           "enabled": true
         },
         "!": {
-          "isDefault": true
+          "default": true
         }
       }
     }
