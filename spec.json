@@ -11,18 +11,14 @@
     }
   },
   {
-    "operation": "sort",
-    "spec": {}
-  },
-  {
     "operation": "default",
     "spec": {
       "options[]": {
         "*": {
-          "enabled": "true"
+          "enabled": true
         },
         "!": {
-          "default": "true"
+          "isDefault": true
         }
       }
     }
